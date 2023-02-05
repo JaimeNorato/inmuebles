@@ -11,6 +11,7 @@ class DataBase:
 
     # connect to database
     def connect(self):
+        print("connect")
         return pymysql.connect(
             host=self.host,
             port=self.port,

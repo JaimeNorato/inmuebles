@@ -1,9 +1,9 @@
-from config.database import Database
+from config.database import DataBase
 
 class Model:
 
     def __init__(self):
-        self.db = Database('3.130.126.210', '3309', 'pruebas', 'VGbt3Day5R', 'habi_db')
+        self.db = DataBase('3.130.126.210', 3309, 'pruebas', 'VGbt3Day5R', 'habi_db')
         self.cursor = self.db.get_cursor()
 
     # executa el query
@@ -17,6 +17,8 @@ class Model:
         
     # obtiene todos los registros de la tabla
     def get(self, query):
+        print("query")
+        print(query)
         try:
             self.cursor.execute(query)
             return self.cursor.fetchall()
