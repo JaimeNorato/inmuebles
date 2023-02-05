@@ -1,0 +1,38 @@
+// filtros de busqueda posibles para la consulta
+{
+    "city": "bogota",
+	"status": "pre_venta",
+    "year": "2018"
+}
+/// se puede enviar cual quier convinacion de los filtros ejemplo
+{
+	"status": "pre_venta",
+    "year": "2018"
+}
+// ejemplo 2
+{
+    "city": "bogota",
+    "status": "pre_venta"
+}
+// ejemplo 3
+{
+    "year": "2018"
+}
+
+// estatus posibles que se pueden enviar en el filtro status
+{
+    "pre_venta",
+    "en_venta",
+    "vendido"
+} 
+
+// valores possibles en el filtro city
+{
+    "bogota",
+    "medellin",
+    "cali",
+    "barranquilla",
+    "pereira",
+    "dosquebradas",
+    // cualquier otra ciudad que se encuentre ralacionada en la base de datos
+}

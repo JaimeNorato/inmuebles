@@ -14,7 +14,7 @@ class PropertyService:
     # Filter properties for address, city, status, price, description
     def filter(self, filters):
         result = []
-        properties = self.property_repository.find_all()
+        properties = self.property_repository.filter(filters)
         for property in properties:
             result.append(property.__dict__)
         return result

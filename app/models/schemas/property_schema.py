@@ -5,6 +5,7 @@ class PropertySchema:
     status = str
     pice = str
     description = str
+    year = str
 
     def __init__(self, property):
         self.fill(property)
@@ -17,7 +18,8 @@ class PropertySchema:
         self.status = property[3]
         self.price = property[4]
         self.description = property[5]
+        self.year = property[6]
         return self
 
     def __str__(self):
-        return f'Property: {self.id}, {self.address}, {self.city}, {self.status}, {self.price}, {self.description}'
+        return f'Property: {self.id}, {self.address}, {self.city}, {self.status}, {self.price}, {self.description}, {self.year}'
