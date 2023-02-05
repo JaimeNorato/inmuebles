@@ -1,4 +1,4 @@
-from app.models.property import Property
+from models.property import Property
 
 def test_find_all():
     properties = Property().find_all()

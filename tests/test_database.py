@@ -1,4 +1,4 @@
-from app.config.database import DataBase
+from config.database import DataBase
 
 def test_conect():
     db = DataBase('3.130.126.210', 3309, 'pruebas', 'VGbt3Day5R', 'habi_db')

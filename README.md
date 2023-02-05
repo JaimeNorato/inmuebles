@@ -16,3 +16,11 @@ A continuación se detalla las tecnologías usadas en el desarrollo del api
 
 
 En este punto iniciaré con las primeras configuraciones del proyecto y a medida que vaya avanzando iré actualizando
+
+## para correr el proyecto
+- inatalar dependencias pip ...
+- python3 app/main.py o python app/main.py en sistemas unix ó py app/main.py en windows
+
+
+### Errores comunes al correr el proyecto
+si al correr el comando pytest -v se muestra este error

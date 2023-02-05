@@ -1,0 +1,19 @@
+[project]
+name = "app"
+version = "0.0.1"
+description = "A app for loading data of the properties from the database."
+authors = [
+    { name="Jaime Rafael Norato Corredor", email="jn901113jn@gmail.com" },
+]
+readme = "README.md"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+tesstpath = "tests"
+
+[tool.pytest.ini_options]
+pythonpath = "./app"
+addopts = [
+    "--import-mode=importlib",
+]
