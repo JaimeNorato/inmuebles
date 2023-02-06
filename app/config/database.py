@@ -1,13 +1,14 @@
 import pymysql
+from config.config_env import ConfigEnv
 
 class DataBase:
 
-    def __init__(self, host, port, user, password, database):
-        self.host = host
-        self.port = port
-        self.user = user
-        self.password = password
-        self.database = database
+    def __init__(self):
+        self.host = ConfigEnv().mysql_host
+        self.port = ConfigEnv().mysql_port
+        self.user = ConfigEnv().mysql_user
+        self.password = ConfigEnv().mysql_password
+        self.database = ConfigEnv().mysql_db
 
     # connect to database
     def connect(self):

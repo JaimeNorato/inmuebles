@@ -18,8 +18,9 @@ A continuación se detalla las tecnologías usadas en el desarrollo del api
 En este punto iniciaré con las primeras configuraciones del proyecto y a medida que vaya avanzando iré actualizando
 
 ## para correr el proyecto
-- inatalar dependencias pip install -r requirements.txt
-- python3 app/main.py o python app/main.py en sistemas unix ó py app/main.py en windows
+- inatalar dependencias `pip install -r requirements.txt`
+- `python3 app/main.py` o `python app/main.py` en linux `py app/main.py` en windows
+- para correr los tests usar `pytest -v`
 
 
 ### puntos de acceso api

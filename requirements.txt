@@ -1,0 +1,8 @@
+flasgger
+Flask
+flask-swagger
+jsonschema
+PyMySQL
+pytest
+python-decouple
+python-dotenv
