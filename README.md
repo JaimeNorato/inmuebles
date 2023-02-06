@@ -18,9 +18,11 @@ A continuación se detalla las tecnologías usadas en el desarrollo del api
 En este punto iniciaré con las primeras configuraciones del proyecto y a medida que vaya avanzando iré actualizando
 
 ## para correr el proyecto
-- inatalar dependencias pip ...
+- inatalar dependencias pip install -r requirements.txt
 - python3 app/main.py o python app/main.py en sistemas unix ó py app/main.py en windows
 
 
-### Errores comunes al correr el proyecto
-si al correr el comando pytest -v se muestra este error
+### puntos de acceso api
+- el servidor corre en la direccion http://localhost:5000
+- el api se encuentra en la uri /api/v1/
+- documentacion del api, se puede consultar en la direccion http://localhost:5000/apidocs
