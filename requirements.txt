@@ -1,7 +1,10 @@
+black 
+flake8
 flasgger
 Flask
 flask-swagger
 jsonschema
+pre-commit
 PyMySQL
 pytest
 python-decouple
