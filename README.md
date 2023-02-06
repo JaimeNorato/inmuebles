@@ -28,6 +28,7 @@ En este punto iniciaré con las primeras configuraciones del proyecto y a medida
 - El servidor corre en la dirección http://localhost:5000
 - el api se encuentra en la uri ==/api/v1/==
 - documentacion del api, se puede consultar en la direccion http://localhost:5000/apidocs
+- Se incluye un .json que se puede importar en insomnia o compatibles, el cual contiene los request con los que se puede realizar pruebas del api, el archivo se llama ==Insomnia_test_api.json== el cual se encuentra en la raíz de este proyecto
 
 ### Extensión para favoritos 
 Para agregar la funcionalidad de inmuebles favoritos, se crea una tabla pívot o de relación muchos a muchos, llamada `property_favorites_user`, esta tabla contiene los cambos `user_id` y `property_id` los cuales son llaves primarias que hacen referencias a los `id` de auth_property u property respectivamente.

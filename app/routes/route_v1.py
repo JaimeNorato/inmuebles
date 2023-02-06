@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request, make_response
 from flasgger import Swagger, fields
 from routes.route import Route
+from models.property import Property
 from services.property_service import PropertyService
 
 
@@ -90,7 +91,7 @@ class RouteV1(Route):
                             default: success
 
         """
-        property_service = PropertyService()
+        property_service = PropertyService(Property())
         return Route.response(property_service.get_all())
 
     @app.route(f"{PREFIX_API}/properties", methods=["POST"])
@@ -164,5 +165,5 @@ class RouteV1(Route):
                             default: success
         """
         data = request.get_json()
-        property_service = PropertyService()
+        property_service = PropertyService(Property())
         return Route.response(property_service.filter(data))

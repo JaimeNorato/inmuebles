@@ -13,10 +13,12 @@ def test_find_filter():
 
 
 def test_service_find_all():
-    properties = PropertyService().get_all()
+    properties = PropertyService(Property()).get_all()
     assert properties is not None
 
 
 def test_service_find_filter():
-    properties = PropertyService().filter({"status": "en_venta", "city": "bogota"})
+    properties = PropertyService(Property()).filter(
+        {"status": "en_venta", "city": "bogota"}
+    )
     assert properties is not None

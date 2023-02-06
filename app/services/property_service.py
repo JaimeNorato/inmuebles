@@ -1,9 +1,9 @@
-from models.property import Property
+from models.model import Model
 
 
 class PropertyService:
-    def __init__(self):
-        self.property_repository = Property()
+    def __init__(self, property_repository: Model):
+        self.property_repository = property_repository
 
     def get_all(self):
         result = []
@@ -19,15 +19,3 @@ class PropertyService:
         for property in properties:
             result.append(property.__dict__)
         return result
-
-    # def get_by_id(self, id):
-    #     return self.property_repository.get_by_id(id)
-
-    # def create(self, property):
-    #     return self.property_repository.create(property)
-
-    # def update(self, id, property):
-    #     return self.property_repository.update(id, property)
-
-    # def delete(self, id):
-    #     return self.property_repository.delete(id)
