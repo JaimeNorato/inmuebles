@@ -1,8 +1,8 @@
 import pymysql
 from config.config_env import ConfigEnv
 
-class DataBase:
 
+class DataBase:
     def __init__(self):
         self.host = ConfigEnv().mysql_host
         self.port = ConfigEnv().mysql_port
@@ -18,13 +18,13 @@ class DataBase:
             port=self.port,
             user=self.user,
             password=self.password,
-            db=self.database
+            db=self.database,
         )
-    
+
     # get cursor
     def get_cursor(self):
         return self.connect().cursor()
-    
+
     # close connection
     def close(self):
         self.connect().close()

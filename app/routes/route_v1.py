@@ -5,13 +5,12 @@ from services.property_service import PropertyService
 
 
 class RouteV1(Route):
-
-    PREFIX_API = '/api/v1'
+    PREFIX_API = "/api/v1"
 
     app = Flask(__name__)
     swagger = Swagger(app)
 
-    @app.route(f'{PREFIX_API}/', methods=['GET'])
+    @app.route(f"{PREFIX_API}/", methods=["GET"])
     def index():
         """
         Varifica si el servidor esta corriendo
@@ -34,12 +33,12 @@ class RouteV1(Route):
                         message:
                             type: string
                             description: status de la peticion
-                            default: success                       
+                            default: success
         """
-        
-        return Route.response({'message': 'run server!'})
 
-    @app.route(f'{PREFIX_API}/properties', methods=['GET'])
+        return Route.response({"message": "run server!"})
+
+    @app.route(f"{PREFIX_API}/properties", methods=["GET"])
     def properties():
         """
         Obtiene el listado de inmuebles con status pre_venta”, “en_venta” y “vendido”
@@ -94,7 +93,7 @@ class RouteV1(Route):
         property_service = PropertyService()
         return Route.response(property_service.get_all())
 
-    @app.route(f'{PREFIX_API}/properties', methods=['POST'])
+    @app.route(f"{PREFIX_API}/properties", methods=["POST"])
     def properties_filter():
         """
         Obtiene el listado de inmuebles con filtrados por status (“pre_venta”, “en_venta” y “vendido”) por ciudad y/o año de construcción

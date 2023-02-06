@@ -22,4 +22,4 @@ class PropertySchema:
         return self
 
     def __str__(self):
-        return f'Property: {self.id}, {self.address}, {self.city}, {self.status}, {self.price}, {self.description}, {self.year}'
+        return f"Property: {self.id}, {self.address}, {self.city}, {self.status}, {self.price}, {self.description}, {self.year}"

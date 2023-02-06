@@ -1,5 +1,6 @@
 from models.property import Property
 
+
 class PropertyService:
     def __init__(self):
         self.property_repository = Property()
@@ -10,7 +11,7 @@ class PropertyService:
         for property in properties:
             result.append(property.__dict__)
         return result
-    
+
     # Filter properties for address, city, status, price, description
     def filter(self, filters):
         result = []
